@@ -1,0 +1,7 @@
+pyserial
+pynmea2
+tkintermapview
+pyproj
+numpy
+pillow
+keyboard

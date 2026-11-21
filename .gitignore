@@ -1,0 +1,14 @@
+# réglages personnels (chemins de votre PC) : seul le modèle est publié
+copilote_condor.ini
+derniere_fenetre.txt
+vne_perso.txt
+
+# données d'autres logiciels
+CoTASA_data.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# journaux
+*.log

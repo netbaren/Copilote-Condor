@@ -26,6 +26,8 @@ Un copilote pour **Condor 3**, le simulateur de vol à voile : une carte en dire
 - **Python 3.10 ou plus récent** (python.org ; cochez « Add Python to PATH » à l'installation).
 - Une **paire de ports série virtuels** (par exemple avec VSPE, Virtual Serial Port Emulator) : Condor écrit sa sortie NMEA sur un port, le copilote lit l'autre. Par défaut : Condor sur **COM10**, copilote sur **COM11**.
 
+Avec VSPE, le fichier `outils/Pairing_com10_11.vspe` crée directement cette paire : dans VSPE, ouvrez-le (File › Open), puis démarrez l'émulation.
+
 ## Installation
 
 1. Téléchargez le dépôt (bouton vert **Code**, puis **Download ZIP**) et décompressez-le dans un dossier de votre choix.

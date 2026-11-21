@@ -64,6 +64,21 @@ ou avec `lancer_copilote.ps1`, que vous pouvez associer à un raccourci sur le b
 
 Tous les réglages (couleurs, tailles, marge de sécurité, raccourcis, position de la fenêtre…) sont commentés dans `copilote_condor.ini`.
 
+## Placer la fenêtre du copilote
+
+Tout se règle dans la section `[Fenetre]` de `copilote_condor.ini`.
+
+**Avec un seul écran** : Condor d'un côté, le copilote de l'autre. Donnez au copilote sa position et sa taille (`fenetre_x`, `fenetre_y`, `fenetre_largeur`, `fenetre_hauteur`, en pixels depuis le coin haut gauche de l'écran), et réduisez la fenêtre de Condor pour qu'elles ne se chevauchent pas.
+
+**Avec deux écrans** : Condor en plein écran sur l'écran principal, le copilote en grand sur le second. Deux façons de faire :
+
+- *La plus simple* : mettez `memoriser_fenetre = oui`, lancez le copilote, faites glisser sa fenêtre sur le second écran, donnez-lui la taille voulue, puis fermez-la. Elle se rouvrira toujours à cet endroit.
+- *Plein écran sur le second écran* : mettez `fenetre_agrandie = oui` et `memoriser_fenetre = non`, et placez `fenetre_x` à l'intérieur du second écran.
+  - Second écran **à droite** du principal : `fenetre_x` = largeur de l'écran principal (par exemple `1920` pour un écran Full HD).
+  - Second écran **à gauche** : une valeur négative, par exemple `-1920`.
+
+  La position des écrans est celle de *Paramètres Windows › Système › Écran*.
+
 ## Volets conseillés (facultatif)
 
 Le copilote peut afficher le réglage de volets conseillé si le fichier `CoTASA_data.txt` du logiciel CoTASA se trouve dans son dossier. Ce fichier n'est pas fourni ici : sans lui, tout fonctionne, seul le conseil de volets disparaît.
